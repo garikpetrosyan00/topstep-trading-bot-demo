@@ -1,0 +1,17 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "topstep-demo"
+version = "0.1.0"
+description = "A minimal, production-style algorithmic trading bot demo."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas>=2.0.0",
+    "rich>=13.0.0",
+]
+
+[project.scripts]
+topstep-demo = "topstep_demo.__main__:main"
